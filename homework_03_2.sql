@@ -1,5 +1,9 @@
 USE homework_03;
 
+-- Копирование таблицы из другой базы. Первый запрос создает таблицу со всеми свойствами исходной. Второй копирует данные.
+-- CREATE TABLE employee LIKE seminar_03.employee;
+-- INSERT INTO employee SELECT * FROM seminar_03.employee;
+
 CREATE TABLE employee (
     id INT,
     name VARCHAR(100),
