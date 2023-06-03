@@ -63,7 +63,7 @@ SELECT C1.*, C2.* FROM CITY AS C1
 LEFT JOIN CITY AS C2 ON C2.CITYCODE = C1.CITYCODE + 2;
 
 -- 2.	Вывести марку авто - а так же сколько авто такой марки в таблице, вывести записи где количество авто такой марки больше 2, записи на должны дублироваться
-SELECT * FROM AUTO
+SELECT DISTINCT * FROM AUTO
 WHERE MARK IN (
 	SELECT MARK FROM AUTO
 	GROUP BY MARK HAVING COUNT(*) > 2);
